@@ -1,0 +1,25 @@
+// To get started, press Ctrl+Space (or Option+Esc) to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://docs.nordicsemi.com/bundle/nrf-connect-vscode/page/guides/ncs_configure_app.html#devicetree-support-in-the-extension
+
+&i2c0 {
+    status = "okay"; //enable I think?
+    pinctrl-0 = <&i2c0_default>; //default config (0.27, 0.26 for scl, sda)
+    pinctrl-1 = <&i2c0_sleep>; //sleep config
+    pinctrl-names = "default", "sleep";
+
+    mag:mag@1e {
+        compatible = "i2c-device"; //chooses the correct firmware for the node?
+        reg = <0x1e>; //register where the imu is
+        label = "mag"; //label
+    };   
+};

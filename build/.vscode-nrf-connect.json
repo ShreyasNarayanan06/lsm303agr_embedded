@@ -1,0 +1,17 @@
+{
+  "toolchainPath": "/opt/nordic/ncs/toolchains/ef4fc6722e",
+  "sdkPath": "/Users/naray/nordicsdks",
+  "board": "nrf52833dk/nrf52833",
+  "boardDir": "/Users/naray/nordicsdks/zephyr/boards/nordic/nrf52833dk",
+  "boardDirs": [
+    "/Users/naray/nordicsdks/zephyr/boards/nordic/nrf52833dk"
+  ],
+  "optimizations": "none",
+  "cmakeArgs": [],
+  "confFiles": [],
+  "buildDirectory": "build",
+  "kconfigFragments": [],
+  "snippets": [],
+  "dtcOverlays": [],
+  "extraDtcOverlays": []
+}

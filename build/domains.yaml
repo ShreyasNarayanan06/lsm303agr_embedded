@@ -1,0 +1,7 @@
+default: lsm303agr
+build_dir: /Users/naray/Desktop/isc/embedded/lsm303agr/build
+domains:
+  - name: lsm303agr
+    build_dir: /Users/naray/Desktop/isc/embedded/lsm303agr/build/lsm303agr
+flash_order:
+  - lsm303agr

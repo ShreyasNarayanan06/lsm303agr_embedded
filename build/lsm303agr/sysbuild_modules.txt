@@ -1,0 +1,2 @@
+"nrf":"/Users/naray/nordicsdks/nrf":"/Users/naray/nordicsdks/nrf/sysbuild"
+"mcuboot":"/Users/naray/nordicsdks/bootloader/mcuboot":"/Users/naray/nordicsdks/bootloader/mcuboot/boot/zephyr/sysbuild"
