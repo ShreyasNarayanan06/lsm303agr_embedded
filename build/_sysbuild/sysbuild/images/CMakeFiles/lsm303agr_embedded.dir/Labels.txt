@@ -1,0 +1,13 @@
+# Target labels
+ lsm303agr_embedded
+# Source files and their labels
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/CMakeFiles/lsm303agr_embedded
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/CMakeFiles/lsm303agr_embedded.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/CMakeFiles/lsm303agr_embedded-complete.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-build.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-configure.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-download.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-install.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-mkdir.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-patch.rule
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/sysbuild/images/lsm303agr_embedded-prefix/src/lsm303agr_embedded-stamp/lsm303agr_embedded-update.rule

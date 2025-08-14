@@ -1,0 +1,55 @@
+cmake:
+  application:
+    configuration-dir: /Users/naray/Desktop/isc/embedded/lsm303agr_embedded
+    source-dir: /Users/naray/Desktop/isc/embedded/lsm303agr_embedded
+  board:
+    name: nrf52833dk
+    path:
+     - /Users/naray/nordicsdks/zephyr/boards/nordic/nrf52833dk
+    qualifiers: nrf52833
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /Users/naray/nordicsdks/nrf/dts/bindings
+     - /Users/naray/nordicsdks/zephyr/dts/bindings
+    files:
+     - /Users/naray/nordicsdks/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833.dts
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/nrf52833dk_nrf52833.overlay
+    include-dirs:
+     - /Users/naray/nordicsdks/nrf/include
+     - /Users/naray/nordicsdks/nrf/dts/common
+     - /Users/naray/nordicsdks/nrf/dts/riscv
+     - /Users/naray/nordicsdks/nrf/dts/arm
+     - /Users/naray/nordicsdks/nrf/dts
+     - /Users/naray/nordicsdks/zephyr/include
+     - /Users/naray/nordicsdks/zephyr/include/zephyr
+     - /Users/naray/nordicsdks/zephyr/dts/common
+     - /Users/naray/nordicsdks/zephyr/dts/x86
+     - /Users/naray/nordicsdks/zephyr/dts/xtensa
+     - /Users/naray/nordicsdks/zephyr/dts/sparc
+     - /Users/naray/nordicsdks/zephyr/dts/riscv
+     - /Users/naray/nordicsdks/zephyr/dts/posix
+     - /Users/naray/nordicsdks/zephyr/dts/nios2
+     - /Users/naray/nordicsdks/zephyr/dts/arm64
+     - /Users/naray/nordicsdks/zephyr/dts/arm
+     - /Users/naray/nordicsdks/zephyr/dts/arc
+     - /Users/naray/nordicsdks/zephyr/dts
+    user-files:
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/nrf52833dk_nrf52833.overlay
+  kconfig:
+    files:
+     - /Users/naray/nordicsdks/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833_defconfig
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/prj.conf
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/lsm303agr_embedded/zephyr/.config.sysbuild
+    user-files:
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/prj.conf
+  toolchain:
+    name: zephyr
+    path: /opt/nordic/ncs/toolchains/ef4fc6722e/opt/zephyr-sdk
+  vendor-specific:
+    nordic:
+      svdfile: /Users/naray/nordicsdks/modules/hal/nordic/nrfx/mdk/nrf52833.svd
+  zephyr:
+    version: 4.0.99
+    zephyr-base: /Users/naray/nordicsdks/zephyr
+version: 0.1.0

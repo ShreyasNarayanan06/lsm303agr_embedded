@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/naray/Desktop/isc/embedded/lsm303agr/build/_sysbuild/cmake_install.cmake")
+  include("/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/naray/Desktop/isc/embedded/lsm303agr/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

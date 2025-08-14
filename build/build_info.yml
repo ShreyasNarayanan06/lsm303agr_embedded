@@ -8,18 +8,18 @@ cmake:
     qualifiers: nrf52833
     revision: 
   images:
-   - name: lsm303agr
-     source-dir: /Users/naray/Desktop/isc/embedded/lsm303agr
+   - name: lsm303agr_embedded
+     source-dir: /Users/naray/Desktop/isc/embedded/lsm303agr_embedded
      type: MAIN
   kconfig:
     files:
-     - /Users/naray/Desktop/isc/embedded/lsm303agr/build/_sysbuild/empty.conf
-     - /Users/naray/Desktop/isc/embedded/lsm303agr/build/_sysbuild/empty.conf
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/empty.conf
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/empty.conf
     user-files:
-     - /Users/naray/Desktop/isc/embedded/lsm303agr/build/_sysbuild/empty.conf
+     - /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/_sysbuild/empty.conf
   sysbuild: true
 version: 0.1.0
 west:
-  command: /opt/nordic/ncs/toolchains/ef4fc6722e/bin/west build --build-dir /Users/naray/Desktop/isc/embedded/lsm303agr/build /Users/naray/Desktop/isc/embedded/lsm303agr --pristine --board nrf52833dk/nrf52833
+  command: /opt/nordic/ncs/toolchains/ef4fc6722e/bin/west build --build-dir /Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build /Users/naray/Desktop/isc/embedded/lsm303agr_embedded --pristine --board nrf52833dk/nrf52833 --sysbuild --
   topdir: /Users/naray/nordicsdks
   version: 1.2.0

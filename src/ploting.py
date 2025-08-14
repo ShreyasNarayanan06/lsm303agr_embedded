@@ -58,29 +58,41 @@ smoothed_derivative = np.gradient(ovr_lpf_np)
     
 plt.figure(figsize=(12, 10))
 
+# Calculate tick positions every 0.5s
+if timestamps:
+    min_t = min(timestamps)
+    max_t = max(timestamps)
+    xticks = np.arange(np.floor(min_t), np.ceil(max_t) + 0.5, 0.5)
+else:
+    xticks = []
+
+for i in range(1, 6):
+    plt.subplot(5, 1, i)
+    plt.xticks(xticks)
+
 plt.subplot(5, 1, 1)
-plt.plot(timestamps, x_vals, label='X', color='r')
+plt.plot(timestamps, x_vals, label='X', color='r', marker='o', markersize=3, linestyle='-')
 plt.ylabel('X (uT)')
 plt.grid()
 
 plt.subplot(5, 1, 2)
-plt.plot(timestamps, y_vals, label='Y', color='g')
+plt.plot(timestamps, y_vals, label='Y', color='g', marker='o', markersize=3, linestyle='-')
 plt.ylabel('Y (uT)')
 plt.grid()
 
 plt.subplot(5, 1, 3)
-plt.plot(timestamps, z_vals, label='Z', color='b')
+plt.plot(timestamps, z_vals, label='Z', color='b', marker='o', markersize=3, linestyle='-')
 plt.ylabel('Z (uT)')
 plt.grid()
 
 plt.subplot(5, 1, 4)
-plt.plot(timestamps, ovr_vals, label='OVR', color='k')
+plt.plot(timestamps, ovr_vals, label='OVR', color='k', marker='o', markersize=3, linestyle='-')
 plt.xlabel('Time (s)')
 plt.ylabel('OVR Strength')
 plt.grid()
 
 plt.subplot(5, 1, 5)
-plt.plot(timestamps, smoothed_derivative, label='Smoothed Derivative', color='m')
+plt.plot(timestamps, smoothed_derivative, label='Smoothed Derivative', color='m', marker='o', markersize=3, linestyle='-')
 plt.xlabel('Time (s)')
 plt.ylabel('OVR Smoothed Derivative')
 plt.grid()

@@ -2,13 +2,14 @@
 #include <zephyr/drivers/i2c.h>
 #include <stdint.h>
 #include <math.h>
+#include "signalprocessing.h"
 
-int main(void)
-{
+
+int main(void) {
 static const struct i2c_dt_spec mag = I2C_DT_SPEC_GET(DT_NODELABEL(mag)); // define device
 
 //vars
-// #define NUM_SAMPLES 25
+#define NUM_SAMPLES 25
 
 uint8_t payload[2];
 uint8_t vals[2];
@@ -22,8 +23,11 @@ float x_uT;
 float y_uT;
 float z_uT;
 float field_strength;
-// float field_strength_array[NUM_SAMPLES] = {0};
-// int index = 0;
+float field_strength_array[NUM_SAMPLES] = {0};
+float field_strength_asp[NUM_SAMPLES] = {0};
+int index = 0;
+State current = init;
+
 
 //configure CFG_REG_A_M 
 payload[0] = 0x60;
@@ -82,22 +86,33 @@ while(1) {
 
     // Incrementation:
     // 1. fixed window w lpf+derivative
-    // 2. overlapping window (tune detection algo
+    // 2. overlapping window (tune detection algo)
     
-    
+        
 
-        // if(index = NUM_SAMPLES) {
-        //     //some lpf+derivative function
-        //     index = 0;
-        // }
-        // else {
-        //     field_strength_array[index] = field_strength;
-        // }
+        if(index == NUM_SAMPLES) {
+            sig_proc(field_strength_array, field_strength_asp);
+            index = 0;
+            
+            current = cap_decision(field_strength_asp, current);
 
-        printk("X: %d\n", (int)x_uT);
-        printk("Y: %d\n", (int)y_uT);
-        printk("Z: %d\n", (int)z_uT);
-        printk("OVR: %d\n", (int)field_strength);
+            if(current == done) {
+                printk("The cap is off!");
+                current = init;
+            }
+            
+        }
+        else {
+            field_strength_array[index] = field_strength;
+            index++;
+        }
+
+        
+
+        // printk("X: %d\n", (int)x_uT);
+        // printk("Y: %d\n", (int)y_uT);
+        // printk("Z: %d\n", (int)z_uT);
+        // printk("OVR: %d\n", (int)field_strength);
 
         k_msleep(100);
     }
@@ -108,4 +123,5 @@ while(1) {
 
 return 0;
 }
+
 

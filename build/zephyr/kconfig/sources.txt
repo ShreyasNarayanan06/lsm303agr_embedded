@@ -1,8 +1,8 @@
-/Users/naray/Desktop/isc/embedded/lsm303agr/build/Kconfig/Kconfig.sysbuild.modules
-/Users/naray/Desktop/isc/embedded/lsm303agr/build/Kconfig/boards/Kconfig.nrf52833dk
-/Users/naray/Desktop/isc/embedded/lsm303agr/build/Kconfig/boards/Kconfig.sysbuild
-/Users/naray/Desktop/isc/embedded/lsm303agr/build/Kconfig/soc/Kconfig.soc
-/Users/naray/Desktop/isc/embedded/lsm303agr/build/Kconfig/soc/Kconfig.sysbuild
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/Kconfig/Kconfig.sysbuild.modules
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/Kconfig/boards/Kconfig.nrf52833dk
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/Kconfig/boards/Kconfig.sysbuild
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/Kconfig/soc/Kconfig.soc
+/Users/naray/Desktop/isc/embedded/lsm303agr_embedded/build/Kconfig/soc/Kconfig.sysbuild
 /Users/naray/nordicsdks/nrf/soc/nordic/Kconfig.soc
 /Users/naray/nordicsdks/nrf/soc/nordic/nrf54l/Kconfig.soc
 /Users/naray/nordicsdks/nrf/soc/nordic/nrf71/Kconfig.soc
